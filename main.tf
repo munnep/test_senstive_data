@@ -13,3 +13,7 @@ terraform {
   }
   required_version = ">= 0.14"
 }
+
+data "cloudflare_accounts" "example" {
+  name = "example account"
+}
